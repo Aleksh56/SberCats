@@ -1,0 +1,146 @@
+button {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#homepage {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(235 235 235);
+  padding: 30px 0;
+}
+
+.container {
+  padding: 0 250px;
+}
+
+.header {
+  padding: 20px;
+  font-size: 40px;
+  background: rgb(250, 83, 83);
+  color: white;
+}
+
+.header .container {
+  display: flex;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 0px 12px;
+  border-radius: 12px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.buttons button i {
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+  height: 250px;
+  border: 5px solid green;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.cat-image img {
+  border-radius: 12px;
+}
+
+.cat-name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cat-card-view {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(248, 71, 1);
+}
+
+.cat-card-update {
+}
+
+.cat-card-delete {
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid rgb(248, 71, 1);
+  font-size: 14px;
+}
+
+.create-edit-modal-form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  border: 5px solid red;
+  border-radius: 20px;
+  display: none;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.create-edit-modal-form.show {
+  display: flex;
+  opacity: 1;
+}
+
+#addCatForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cat-view-modal {
+  margin: 0 auto;
+  width: 900px;
+  height: 500px;
+  border: 1px solid black;
+  display: none;
+}
+
+.cat-view-modal.show {
+  display: block;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+}

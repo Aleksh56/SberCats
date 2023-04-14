@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./api.js" defer></script>
+    <script src="./components/cart.js"></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/16d8bec2ee.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo"><i class="fa-solid fa-paw"></i>SweetCats</div>
+        <div class="buttons">
+          <button class="update-btn">
+            <i class="fa-solid fa-spinner"></i>
+          </button>
+          <button class="add-btn"><i class="fas fa-plus"></i></button>
+        </div>
+      </div>
+    </header>
+    <div id="homepage">
+      <div class="content container"></div>
+      <div class="create-edit-modal-form">
+        <div class="formContent">
+          <button class="closeFormButton">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <form action="" id="addCatForm">
+            <label for="id" required>Id</label>
+            <input id="id" placeholder="Id" required />
+            <input id="name" placeholder="Имя" required />
+            <input id="image" placeholder="Ссылка на изображение" required />
+            <input id="age" type="number" placeholder="Возраст" required />
+            <input id="rate" type="number" placeholder="Рейтинг" required />
+            <textarea
+              id="description"
+              rows="3"
+              placeholder="Описание"
+              required
+            ></textarea>
+            <button type="submit">Ok</button>
+          </form>
+        </div>
+      </div>
+      <div class="cat-view-modal">
+        <div class="modal-content">
+          <button class="close-modal-button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="cat-about">
+            <h2 id="catName"></h2>
+            <p id="catAge"></p>
+            <p id="catDescription"></p>
+            <div class="cat-image-modal">
+              <img id="catImage" src="" alt="" width="300px" height="200px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
